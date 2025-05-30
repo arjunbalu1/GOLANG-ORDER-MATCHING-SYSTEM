@@ -87,16 +87,6 @@ Expected output:
 2025/05/30 15:36:02 Starting server on port 8080...
 ```
 
-### Build for Production
-
-```bash
-# Build binary
-go build -o order-matching-server cmd/server/main.go
-
-# Run binary
-./order-matching-server
-```
-
 ## API Documentation
 
 ### Base URL
