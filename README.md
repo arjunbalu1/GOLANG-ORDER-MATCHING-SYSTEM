@@ -28,14 +28,15 @@ go mod tidy
 
 ### 2. MySQL Setup
 
-#### Create Database User (optional):
+#### Set MySQL Root Password:
 ```bash
 mysql -u root -p
-CREATE USER 'orderuser'@'localhost' IDENTIFIED BY 'yourpassword';
-GRANT ALL PRIVILEGES ON order_matching_system.* TO 'orderuser'@'localhost';
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'password';
 FLUSH PRIVILEGES;
 EXIT;
 ```
+
+*Note: This sets the root password to match your .env configuration.*
 
 ### 3. Environment Configuration
 
@@ -425,4 +426,4 @@ go test ./...
 
 ## License
 
-This project is for educational/demonstration purposes. 
+This project is for educational/demonstration purposes.
