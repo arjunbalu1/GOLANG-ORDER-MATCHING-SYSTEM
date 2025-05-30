@@ -1,6 +1,5 @@
 # Order Matching System
 
-
 ## Architecture
 
 ```
@@ -14,9 +13,9 @@
 └── .env               # Configuration
 ```
 
+## Installation & Setup
 
-
-### 2. Install Go Dependencies
+### 1. Install Go Dependencies
 
 ```bash
 # Download dependencies
@@ -27,10 +26,7 @@ go get -u ./...
 go mod tidy
 ```
 
-### 3. MySQL Setup
-
-#### Install MySQL (if not already installed):
-
+### 2. MySQL Setup
 
 #### Create Database User (optional):
 ```bash
@@ -41,7 +37,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-### 4. Environment Configuration
+### 3. Environment Configuration
 
 Create a `.env` file in the project root:
 
@@ -50,14 +46,14 @@ Create a `.env` file in the project root:
 DB_HOST=localhost
 DB_PORT=3306
 DB_USER=root
-DB_PASSWORD=your_mysql_password
+DB_PASSWORD=password
 DB_NAME=order_matching_system
 
 # Server Configuration
 SERVER_PORT=8080
 ```
 
-### 5. Database Initialization
+### 4. Database Initialization
 
 Initialize the database schema:
 
